@@ -48,6 +48,7 @@ a:hover {
 
 /* HEXAGON STARTS HERE */
 .hex {
+
 	width:150px;
 	height:86px;
 	background-color: #ccc;
@@ -69,6 +70,7 @@ a:hover {
 	}
 
 	.hex a {
+
 		display:block;
 		width: 100%;
 		height:100%;
@@ -307,7 +309,9 @@ nav ul {
   #background-text-11 {
   	color: white;
   	text-decoration: bold;
-  	top: 10px
+  	top: 10px;
+  	font-family: 'Arial Black', serif;
+  	font-size: 15px;
   }
 
   #about,
