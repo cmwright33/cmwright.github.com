@@ -40,11 +40,11 @@
 
 
         $('#project-1').on('click', function(){
-          modal.open({content: "<div><h2>Bar-Mapper</h2><img src=\"images/rsz_bar-mapper.png\"/><p></p><button><a href=\"http://barmapper.herokuapp.com\">Heroku Link</a></button><button><a href=\"https://github.com/cmwright33/bar_yelper\">Github Link</a></button><h2>description:Find top-rated bars in Manhatten and Map out a pub route</h2><h2>specs: Rails app, three models, mapping feature, unique user login</h2></div>"});
+          modal.open({content: "<div><h2>Bar-Mapper</h2><img src=\"images/rsz_bar-mapper.png\"/><p></p><button><a href=\"http://barmapper.herokuapp.com\">Heroku Link</a></button><button><a href=\"https://github.com/cmwright33/bar_yelper\">Github Link</a></button><h3><p>Ever wish you could find the best bars in a neigheborhood? Ever wish you could plan out a beer crawl</p><p>to the those bars? Well this is the app for you! Find top-rated bars in Manhatten</p><p> and Map out a pub route using BarMapper Today!</p></h3><h3><ul><li>Rails app</li><li> three models</li><li> Google Maps</li><li> Google Directions api</li><li> Yelp api</li><li> User login and valdidations</li></ul></h2></div>"});
         });
 
          $('#project-2').on('click', function(){
-          modal.open({content: "<div><h2>The Perfect Pint</h2><img src=\"images/rsz_perfect_pint.png\"/><p></p><button><a href=\"http://barmapper.herokuapp.com\">Heroku Link</a></button><button><a href=\"https://github.com/cmwright33/bar_yelper\"> Github Link</a></button><h2>description:Find top-rated bars in Manhatten and Map out a pub route</h2><ul>specs: <li>Rails app</li><li>three models</li><li>mapping feature</li><li>unique user login</li></ul></div>"});
+          modal.open({content: "<div><h2>The Perfect Pint</h2><img src=\"images/rsz_perfect_pint.png\"/><p></p><button><a href=\"http://barmapper.herokuapp.com\">Heroku Link</a></button><button><a href=\"https://github.com/cmwright33/bar_yelper\"> Github Link</a></button><h3><p>Find your favorite beer by flavor. Enter your search criteria into this Ruby powered seach <p></p>engine and find the beer of your dreams! Additionally search by beer name, brewery</p><p> and other criteria!</p></h3><h3><ul><li>Rails app</li><li>Three models</li><li>Search Powered by Flavor</li><li>Webscrapping by Nokogiri</li><li>Custom Rake Task</li><li>User login</li></ul></h3></div>"});
         });
 
           $('#project-3').on('click', function(){
@@ -58,9 +58,22 @@
 
           // sort and highlight the contact info
           $('#contact').on('click', function(){
-          modal.open({content: " <h1>Phone: 401-787-6425</h1><h2>Email: cmwright33@gmail.com</h2>"});
+          modal.open({content: " <h2>Phone: 401-787-6425</h2><h2> Email: cmwright33@gmail.com</h2><button>Email</butto>"});
         });
 
+
+
+        $("#my-title").on('click', function() {
+            // do fading 3 times
+            for(i=0;i<3;i++) {
+               $('#me').fadeTo('slow', 0.25).fadeTo('slow', 1.0);
+                 $('#me').removeAttr('style');
+               $('#me').attr("style", "background-image: url(images/me.jpg); display: block;");
+                 $('#me').removeAttr('style');
+               $('#me').attr("style", "background-image: url(images/44l.png); display: block;");
+
+            }
+          });
 
           // click on needs to be changed
           //sort and highlight the projects
@@ -98,7 +111,7 @@
 
           // on click reveal that beautiful face and some text about me
              $('#me').on('click', function(){
-          modal.open({content: "<img src=\"images/rsz_me.png\"/><h2>About Me</h2><p>This is balonge</p>"});
+          modal.open({content: "<img src=\"images/rsz_me.png\"/><h2>About Me</h2><p>Born and raised in Rhode Island, I am a New Englander through. I'm </p><p> not sure what to put here so I am going to write a bunch of </p><p>non-sense about stuff that I like to do when I am procrastinating.</p><p>I Like to watch tv for hours, I like to make elaborate meals that are </p><p>delicious but aren't at all asthetically pleasing</p>"});
         });
              // hiding all the hex text
           $('#background-text-1').hide();
